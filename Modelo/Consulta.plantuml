@@ -1,0 +1,8 @@
+@startuml
+class Consulta {
+   Id : Guid
+   PacienteId : Guid
+   MedicoId : Guid
+   DataHora : DateTime
+}
+@enduml

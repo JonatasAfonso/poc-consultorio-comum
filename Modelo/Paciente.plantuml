@@ -1,0 +1,7 @@
+@startuml
+class Paciente {
+  Id : Guid
+  PessoaId : Guid
+  PossuiConvenio : Boolean
+}
+@enduml

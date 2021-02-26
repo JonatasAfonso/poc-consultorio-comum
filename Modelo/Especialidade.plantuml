@@ -1,0 +1,7 @@
+@startuml
+class Especialidade {
+   Id : Guid
+   Nome : String
+   Descricao : String 
+}
+@enduml

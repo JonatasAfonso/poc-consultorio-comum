@@ -1,0 +1,9 @@
+@startuml
+class Pessoa {
+  Id : Guid
+  Nome : String
+  Cidade : String
+  Email : String
+  DataNascimento : DateTime
+}
+@enduml

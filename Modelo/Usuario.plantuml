@@ -1,0 +1,7 @@
+@startuml
+class Usuario{
+  Id : Guid
+  Login : String
+  Password : String
+}
+@enduml

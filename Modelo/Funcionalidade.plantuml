@@ -1,0 +1,8 @@
+@startuml
+Class Funcionalidade{
+  Id : Guid
+  Nome : String
+  Descricao : String 
+  Path : String
+}
+@enduml

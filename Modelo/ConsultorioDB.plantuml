@@ -1,0 +1,54 @@
+@startuml
+Class Funcionalidade{
+  Id : Guid
+  Nome : String
+  Descricao : String 
+  Path : String
+}
+
+class Usuario{
+  Id : Guid
+  Login : String
+  Password : String
+}
+
+class Permissionamento{
+  Id : Guid
+  UsuarioId : Guid
+  FuncionalidadeId : Guid
+}
+
+class Pessoa {
+  Id : Guid
+  Nome : String
+  Cidade : String
+  Email : String
+  DataNascimento : DateTime
+}
+
+class Medico {
+  Id : Guid
+  PessoaId : Guid
+  EspecialidadeId : Guid
+  CRM : String
+}
+
+class Paciente {
+  Id : Guid
+  PessoaId : Guid
+  PossuiConvenio : Boolean
+}
+
+class Especialidade {
+   Id : Guid
+   Nome : String
+   Descricao : String 
+}
+
+class Consulta {
+   Id : Guid
+   PacienteId : Guid
+   MedicoId : Guid
+   DataHora : DateTime
+}
+@enduml

@@ -1,0 +1,50 @@
+@startuml
+' Aplicacao
+Class Funcionalidade{
+  Nome : String
+  Descricao : String 
+  Path : String
+}
+
+class Usuario{
+  Login : String
+  Password : String
+}
+
+Usuario "1" --* "n" Funcionalidade : > Possui
+
+
+' Modelo
+class Pessoa {
+  Nome : String
+  Cidade : String
+  Email : String
+  DataNascimento : DateTime
+}
+
+class Paciente {
+  PossuiConvenio : Boolean
+}
+
+class Medico {  
+  CRM : String
+}
+
+class Especialidade {
+   Nome : String
+   Descricao : String 
+}
+
+
+class Consulta {
+   DataHora : DateTime
+}
+
+Pessoa <|-- Paciente
+Pessoa <|-- Medico
+Medico "1" -- "1" Especialidade : > Possui
+Paciente "1" --* "n" Consulta : > Realiza
+Medico "1" --* "n" Consulta : > Realiza
+
+
+@enduml

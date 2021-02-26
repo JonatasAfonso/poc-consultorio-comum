@@ -1,0 +1,8 @@
+@startuml
+class Medico {
+  Id : Guid
+  PessoaId : Guid
+  EspecialidadeId : Guid
+  CRM : String
+}
+@enduml

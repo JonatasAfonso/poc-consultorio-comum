@@ -1,0 +1,7 @@
+@startuml
+class Permissionamento{
+  Id : Guid
+  UsuarioId : Guid
+  FuncionalidadeId : Guid
+}
+@enduml
